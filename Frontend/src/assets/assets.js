@@ -1,7 +1,7 @@
 import Repaire from "./Repaire.svg"
-import Cctv from "./Cctv.jpg"
-import webDesign from "./webDesign.jpg"
-import Network from "./Network.png"
+import Cctv from "./Cctv.webp"
+import webDesign from "./webDesign.webp"
+import Network from "./Network.webp"
 
 export const services=[
     {

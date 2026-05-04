@@ -1,5 +1,5 @@
 import React from 'react'
-import main2 from '../assets/main2.jpg'
+import main2 from '../assets/main2.webp'
 import { FaHome } from 'react-icons/fa'; 
 import { FaFastForward } from 'react-icons/fa';
 import { BsSpeedometer } from 'react-icons/bs';
