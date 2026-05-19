@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
-import logo from '../assets/logo.jpg'
+
 
 const Footer = () => {
     const socialLinks = [
@@ -9,6 +9,7 @@ const Footer = () => {
     { icon: <FaYoutube />, link: "https://youtube.com" },
   ];
 
+  const logoUrl='https://res.cloudinary.com/dxf93mjby/image/upload/v1779164892/logo_tgyahr.jpg';
   return (
     <div className='pt-20'>
         <footer className=" w-full bg-zinc-50 py-10 px-4 sm:px-6 md:px-10">
@@ -16,7 +17,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col items-start gap-6">
 
         {/* ✅ Logo */}
-        <img src={logo} alt="logo" className="w-24" />
+        <img src={logoUrl} alt="logo" className="w-24" />
 
         {/* ✅ Contact Info */}
         <div className="flex flex-col sm:flex-row gap-6 text-sm text-zinc-600">

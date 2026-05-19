@@ -1,11 +1,12 @@
 import React from 'react'
-import main2 from '../assets/main2.webp'
+
 import { FaHome } from 'react-icons/fa'; 
 import { FaFastForward } from 'react-icons/fa';
 import { BsSpeedometer } from 'react-icons/bs';
 import { FaMoneyBillWave, FaPiggyBank } from 'react-icons/fa';
 
 const About = () => {
+    const main2Url='https://res.cloudinary.com/dxf93mjby/image/upload/v1779164859/main2_lrqlza.webp';
   return (
     <div className=''>
        <h1 className="text-3xl font-semibold text-center mx-auto">About our Company </h1>
@@ -16,7 +17,7 @@ const About = () => {
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
                 <div className="size-[600px] rounded-full absolute blur-[300px] -z-10 bg-[#97988b]"></div>
                 <img className="max-w-sm w-full rounded-xl h-auto"
-                   src={main2} />
+                   src={main2Url} />
                 <div>
                     <h1 className="text-3xl font-semibold">Our Latest features</h1>
                     <p className="text-sm text-slate-500 mt-2">

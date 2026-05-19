@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import { IoCallOutline } from "react-icons/io5";
-import logo from '../assets/logo.jpg'
 import { useNavigate, NavLink } from 'react-router-dom'; // Changed Link to NavLink
 
 const Navbar = () => {
@@ -13,18 +12,19 @@ const Navbar = () => {
     ];
     
     const navigate = useNavigate();
+    const logoUrl='https://res.cloudinary.com/dxf93mjby/image/upload/v1779164892/logo_tgyahr.jpg';
 
     return (
         <>
             <nav className="bg-white px-6 md:px-12 lg:px-24 xl:px-40 py-4 flex items-center justify-between relative">
                 <h2 className="flex items-center">
                     <img 
-                        src={logo} 
+                        src={logoUrl} 
                         alt="Logo" 
                         onClick={() => navigate('/services')} 
                         className="w-14 h-14 inline-block mr-2 cursor-pointer" 
                     />
-                    TopEngineer
+                    TopEngineer 
                 </h2>
 
                 {/* Desktop Menu */}

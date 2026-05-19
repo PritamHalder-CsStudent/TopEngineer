@@ -1,7 +1,4 @@
 import Repaire from "./Repaire.svg"
-import Cctv from "./Cctv.webp"
-import webDesign from "./webDesign.webp"
-import Network from "./Network.webp"
 
 export const services=[
     {
@@ -12,18 +9,18 @@ export const services=[
     {
         id:2,
         name:"CCTV installation",
-        img:Cctv
+        img:'https://res.cloudinary.com/dxf93mjby/image/upload/v1779164634/Cctv_cxdjum.webp'
     },
 
     {
          id:3,
         name:"Website Development",
-        img:webDesign
+        img:'https://res.cloudinary.com/dxf93mjby/image/upload/v1779164704/webDesign_pbprnw.webp'
     },
     {
          id:4,
         name:"NetWork Installation/Maintenance",
-        img:Network
+        img:'https://res.cloudinary.com/dxf93mjby/image/upload/v1779164675/Network_xglvc0.webp'
     }
 
 ]

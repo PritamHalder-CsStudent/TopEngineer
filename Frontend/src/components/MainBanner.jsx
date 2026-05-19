@@ -1,6 +1,5 @@
 import React from 'react'
 import mainBann from '../assets/mainBann.jpeg'
-import mobileBann from '../assets/mobileBann.jpg'
 import { Link } from 'react-router-dom'
 import { FaArrowRight, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
@@ -10,6 +9,7 @@ const MainBanner = () => {
       { icon: <FaInstagram />, link: "https://instagram.com" },
       { icon: <FaYoutube />, link: "https://youtube.com" },
     ];
+  const mobileBannUrl='https://res.cloudinary.com/dxf93mjby/image/upload/v1779164803/mobileBann_a3unhi.jpg';  
 
   return (
     <div className='relative w-full h-[80vh] md:h-auto overflow-hidden bg-gray-900'>
@@ -21,7 +21,7 @@ const MainBanner = () => {
           className='absolute inset-0 w-full h-full object-cover hidden md:block' 
         />
         <img 
-          src={mobileBann} 
+          src={mobileBannUrl} 
           alt="Mobile banner" 
           className='absolute inset-0 w-full h-full object-cover md:hidden' 
         />
