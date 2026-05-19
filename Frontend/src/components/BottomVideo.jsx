@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
-import video from '../assets/video.mp4';
 import { FaVolumeMute, FaVolumeUp } from 'react-icons/fa'; // Optional: for a pro look
 
 const BottomVideo = () => {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(true); 
     const [isMuted, setIsMuted] = useState(true);
+    const videoUrl='https://res.cloudinary.com/dxf93mjby/video/upload/v1779162624/video_zymf6m.mp4';
 
     const handleVideoClick = () => {
         if (videoRef.current.paused) {
@@ -51,14 +51,15 @@ const BottomVideo = () => {
                 <div className='absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 pointer-events-none z-10' />
 
                 <video 
-                    ref={videoRef}
-                    src={video} 
+                    ref={videoRef} 
                     className='w-full h-auto max-h-[500px] md:max-h-[700px] object-cover transition-transform duration-700 group-hover:scale-[1.02]' 
                     autoPlay 
                     loop 
                     muted // Must stay muted for autoplay to work
                     playsInline
+                    preload='metadata' //// Stops the browser from pre-downloading the whole file
                 >
+                    <source src={videoUrl} type='video/mp4' />
                     Your browser does not support the video tag.
                 </video>
                 <div className='absolute bottom-8 left-8 z-20 hidden md:block'>
